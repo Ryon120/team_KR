@@ -23,22 +23,23 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `tasks`
+-- テーブルの構造 `posts`
 --
 
-CREATE TABLE IF NOT EXISTS `tasks` (
+CREATE TABLE IF NOT EXISTS `posts` (
   `id` int(11) NOT NULL,
   `title` varchar(20) NOT NULL,
-  `contents` text NOT NULL,
-  `user_id` int(11),
-  `created` datetime
+  `description` text NOT NULL,
+  `created at` datetime,
+  `updated at` datetime,
+  `image`  text NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
--- テーブルのデータのダンプ `tasks`
+-- テーブルのデータのダンプ `posts`
 --
 
-INSERT INTO `tasks` (`id`, `title`, `contents`, `created`) VALUES
+INSERT INTO `posts` (`id`, `title`, `description`, `created at`, `updated at`, `image`) VALUES
 (1, 'テスト', 'Hello oneline_bbs!!', '2016-01-01 00:00:00');
 
 --
@@ -46,9 +47,9 @@ INSERT INTO `tasks` (`id`, `title`, `contents`, `created`) VALUES
 --
 
 --
--- Indexes for table `tasks`
+-- Indexes for table `posts`
 --
-ALTER TABLE `tasks`
+ALTER TABLE `posts`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -56,9 +57,9 @@ ALTER TABLE `tasks`
 --
 
 --
--- AUTO_INCREMENT for table `tasks`
+-- AUTO_INCREMENT for table `posts`
 --
-ALTER TABLE `tasks`
+ALTER TABLE `posts`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
