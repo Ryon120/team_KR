@@ -28,19 +28,42 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `posts` (
   `id` int(11) NOT NULL,
+  `title` varchar(20) NOT NULL,CREATE TABLE IF NOT EXISTS `posts` (
+  `id` int(11) NOT NULL,
   `title` varchar(20) NOT NULL,
   `description` text NOT NULL,
   `created at` datetime,
   `updated at` datetime,
   `image`  text NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+--
+-- テーブルのデータのダンプ `posts`
+--
+INSERT INTO `posts` (`id`, `title`, `description`, `created at`, `updated at`, `image`) VALUES
+(1, 'テスト', 'Hello oneline_bbs!!', '2016-01-01 00:00:00','2016-01-01 00:00:00','This is a picture');
+--
+-- Indexes for dumped tables
+--
+--
+-- Indexes for table `posts`
+--
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`);
+--
+-- AUTO_INCREMENT for dumped tables
+--
+--
+-- AUTO_INCREMENT for table `posts`
+--
+ALTER TABLE `posts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 
 --
 -- テーブルのデータのダンプ `posts`
 --
 
 INSERT INTO `posts` (`id`, `title`, `description`, `created at`, `updated at`, `image`) VALUES
-(1, 'テスト', 'Hello oneline_bbs!!', '2016-01-01 00:00:00');
+(1, 'テスト', 'Hello oneline_bbs!!', '2016-01-01 00:00:00','2016-01-01 00:00:00','pic');
 
 --
 -- Indexes for dumped tables
