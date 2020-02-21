@@ -1,6 +1,9 @@
 #form5{
     position:relative; 
     margin-bottom:20px;	
+    margin-top: 20px;
+    margin-left: 15px;
+    text-align: center;
     }
     #sbox5{	
     outline:0;	
@@ -12,6 +15,7 @@
     min-width:240px;
     border-radius:2px;
     background:#eee;
+    
     }
     #sbtn5{
     width:70px;
@@ -25,19 +29,39 @@
     font-weight:bold;
     font-size:16px;
     border:none;
-
+   
     }
     #sbtn5:hover{
     background:#eee;
     color: #808080;
     }
 
-.header-left{
+.header-center{
     background-color:#C0C0C0;
     font-size: 50px;
     font-family: 'Caveat', cursive;
     text-align: center;
+    margin: auto;
 }
+
+.header{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color:#C0C0C0;
+}
+
+.header div{
+    width: 30%;
+    
+}
+
+.header-left{
+    margin: auto;
+}
+
+
+
 
 
 

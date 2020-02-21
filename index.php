@@ -19,12 +19,21 @@ session_start();
 <body>
 
 <div class="header">
-<div class="header-left">
-    Mango-Daiary
-<form id="form5" action="自分のサイトのURL">
-<input id="sbox5"  id="s" name="s" type="text" placeholder="キーワードを入力" />
-<input id="sbtn5" type="submit" value="検索" />
-</form>
+    <div class="header-left">
+        <form id="form5" action="自分のサイトのURL">
+            <input id="sbox5"  id="s" name="s" type="text" placeholder="過去の記事を探す" />
+            <input id="sbtn5" type="submit" value="検索" />
+        </form>
+    </div>
+    <div class="header-center">
+        Mango-Diary
+    </div>
 
+
+    <div class="header-right">
+
+    </div>
+
+</div>
 </body>
 </html>
