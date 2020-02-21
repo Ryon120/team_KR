@@ -1,14 +1,17 @@
 #form5{
-    position:relative; 
-    margin-bottom:20px;	
+    position:relative;
+    margin-bottom:20px; 
+    margin-top: 20px;
+    margin-left: 15px;
+    text-align: center;
     }
-    #sbox5{	
-    outline:0;	
+    #sbox5{ 
+    outline:0;  
     height:50px;
-    padding:0 10px; 
+    padding:0 10px;
     margin:auto auto 15px auto;
     left:50ox;
-    top:0; 
+    top:0;
     min-width:240px;
     border-radius:2px;
     background:#eee;
@@ -16,7 +19,7 @@
     #sbtn5{
     width:70px;
     height:59px;
-    left:-90px; 
+    left:-90px;
     top:0;
     bottom:15px;
     border-radius:2px;
@@ -25,22 +28,67 @@
     font-weight:bold;
     font-size:16px;
     border:none;
-
     }
     #sbtn5:hover{
     background:#eee;
     color: #808080;
     }
-
-.header-left{
+.header-center{
     background-color:#C0C0C0;
     font-size: 50px;
     font-family: 'Caveat', cursive;
     text-align: center;
+    margin: auto;
+}
+.header{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color:#C0C0C0;
+}
+.header div{
+    width: 30%;
+}
+.header-left{
+    margin: auto;
+}
+
+.user-img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    background-color: black;
 }
 
 
-
-    
-    
+a.cp_btn {
+	display: block;
+	position: relative;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background: #455A64;
+	border:1px solid #fff;
+	overflow: hidden;
+}
+a.cp_btn:after {
+	content:"";
+	position: absolute;
+	top: -100%;
+	left: -100%;
+	height: 100%;
+	width: 160px;
+	background : #fff;
+	opacity: 0.3;
+	transition: .4s;
+}
+a.cp_btn:hover:after {
+	top: 0;
+	left: 0;
+}
+a {
+    text-decoration: none;
+    }
     
